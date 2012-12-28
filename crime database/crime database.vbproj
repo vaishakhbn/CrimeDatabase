@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08F92399-2B1C-474F-BB6B-E4C7371739EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>crime_database.My.MyApplication</StartupObject>
+    <RootNamespace>crime_database</RootNamespace>
+    <AssemblyName>crime database</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>crime database.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>crime database.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cname.Designer.vb">
+      <DependentUpon>cname.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cname.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="date_of_crime.Designer.vb">
+      <DependentUpon>date_of_crime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="date_of_crime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enter_status.Designer.vb">
+      <DependentUpon>Enter_status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enter_status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General_info.Designer.vb">
+      <DependentUpon>General_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="investigate.Designer.vb">
+      <DependentUpon>investigate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="investigate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_login.Designer.vb">
+      <DependentUpon>admin_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="File_FIR.Designer.vb">
+      <DependentUpon>File_FIR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="File_FIR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fir_login.Designer.vb">
+      <DependentUpon>fir_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fir_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="investigation_login.Designer.vb">
+      <DependentUpon>investigation_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="investigation_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jail.Designer.vb">
+      <DependentUpon>Jail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Jail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lost_Found.Designer.vb">
+      <DependentUpon>Lost_Found.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lost_Found.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_by_date.Designer.vb">
+      <DependentUpon>Search_by_date.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search_by_date.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_by_name.Designer.vb">
+      <DependentUpon>search_by_name.vb</DependentUpon>
+    </Compile>
+    <Compile Include="search_by_name.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_by_place.Designer.vb">
+      <DependentUpon>search_by_place.vb</DependentUpon>
+    </Compile>
+    <Compile Include="search_by_place.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_results.Designer.vb">
+      <DependentUpon>Search_results.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search_results.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_result_by_place.Designer.vb">
+      <DependentUpon>Search_result_by_place.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search_result_by_place.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_result_type.Designer.vb">
+      <DependentUpon>search_result_type.vb</DependentUpon>
+    </Compile>
+    <Compile Include="search_result_type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistics.Designer.vb">
+      <DependentUpon>statistics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="statistics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistics_result.Designer.vb">
+      <DependentUpon>statistics_result.vb</DependentUpon>
+    </Compile>
+    <Compile Include="statistics_result.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="type.Designer.vb">
+      <DependentUpon>type.vb</DependentUpon>
+    </Compile>
+    <Compile Include="type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome to CDMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome to CDMS.Designer.vb">
+      <DependentUpon>Welcome to CDMS.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cname.resx">
+      <DependentUpon>cname.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="date_of_crime.resx">
+      <DependentUpon>date_of_crime.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enter_status.resx">
+      <DependentUpon>Enter_status.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General_info.resx">
+      <DependentUpon>General_info.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="investigate.resx">
+      <DependentUpon>investigate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_login.resx">
+      <DependentUpon>admin_login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File_FIR.resx">
+      <DependentUpon>File_FIR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fir_login.resx">
+      <DependentUpon>fir_login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="investigation_login.resx">
+      <DependentUpon>investigation_login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jail.resx">
+      <DependentUpon>Jail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lost_Found.resx">
+      <DependentUpon>Lost_Found.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_by_date.resx">
+      <DependentUpon>Search_by_date.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_by_name.resx">
+      <DependentUpon>search_by_name.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_by_place.resx">
+      <DependentUpon>search_by_place.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_results.resx">
+      <DependentUpon>Search_results.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_result_by_place.resx">
+      <DependentUpon>Search_result_by_place.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_result_type.resx">
+      <DependentUpon>search_result_type.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statistics.resx">
+      <DependentUpon>statistics.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statistics_result.resx">
+      <DependentUpon>statistics_result.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="type.resx">
+      <DependentUpon>type.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome to CDMS.resx">
+      <DependentUpon>Welcome to CDMS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lost.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,29 @@
+In Database Can you Add these queries?
+I don't have MySQL in my laptop.
+
+alter table criminal add column age int (2);
+
+Add these in Jail form :) 
+
+
+if(checkedListBox1.CheckedItems.Contains("Name")== true)
+{
+Dim a1 As String
+a1 = TextBox2.text
+Dim cmd As New Odbc.OdbcCommand("select * from jail where name ='" &a1 &"'" , con)
+} 
+
+if(checkedListBox1.CheckedItems.Contains("Section")== true)
+{
+Dim a1 As Int
+a1 = TextBox2.text
+Dim cmd As New Odbc.OdbcCommand("select * from jail where caught_under_section ='" &a1 &"'" , con)
+} 
+if(checkedListBox1.CheckedItems.Contains("Seniority")== true)
+{
+Dim cmd As New Odbc.OdbcCommand("select * from jail order by begin_date " , con)
+} 
+
+Add this query to the Lost And Found Form. Please add a data grid view here also.
+Dim cmd As New Odbc.OdbcCommand("select * from lost_found where status = 'not found' "), con)
+
